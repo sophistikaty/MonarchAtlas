@@ -37,10 +37,15 @@ function selectContent () {
 	console.log('selectContent fired');
 var pageContent = tabletopData.map(function (item) { 
   return item["Page"]; 
-}).map(function (content) { 
-  return "<div>" + content + "</div>" 
+}).map(function (content, item) { 
+	console.log(content, item);
+  return "<li id='p"+item+"'><a href='http://sophistikaty.github.io/MonarchAtlas/Meet-Kristen.html'>" + content + "</a></li>" 
 }).join('');
 document.getElementById('insert').innerHTML = pageContent;
+
+$('#p0').click(function(){
+	console.log('plz go to page now, ok?');
+});
 }
 //for loop through array
 
@@ -51,9 +56,9 @@ document.getElementById('insert').innerHTML = pageContent;
 
 
 
-//innerHTML the variable
 
-//this is a test
+  //----------
+
 
 	  // console.log(process.argv);
 
