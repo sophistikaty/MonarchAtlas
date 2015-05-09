@@ -1,6 +1,26 @@
 
 /* Mobile first - default styles */
 
+body {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+#topNav ul li {
+	display: inline;
+	list-style-type: none;
+	padding: 1px 10px;
+}
+
+a {
+	color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+	color: red;
+}
+
 
 /*Small devices (tablets, 768px and up)*/
 /*@media (min-width: 768px) {
