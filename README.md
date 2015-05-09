@@ -1,2 +1,1 @@
-# MonarchAtlas
-Monarch Atlas
+Monarch Atlas Rules
