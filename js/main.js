@@ -35,13 +35,15 @@ tabletopData = JSON.stringify(tabletopData);
 //varible to hold data
 function selectContent () {
 	console.log('selectContent fired');
-var pageContent = tabletopData.map(function (item) { 
+var pageName = tabletopData.map(function (item) { 
   return item["Page"]; 
 }).map(function (content, item) { 
-	console.log(content, item);
-  return "<li id='p"+item+"'><a href='http://sophistikaty.github.io/MonarchAtlas/Meet-Kristen.html'>" + content + "</a></li>" 
+	// console.log(content, item);
+	console.log(tabletopData, tabletopData[item], tabletopData[item].Page, tabletopData[item].Path);
+  return "<li id='p"+item+"'><a href='http://sophistikaty.github.io/MonarchAtlas/"
+  +tabletopData[item].Path+"'>" + tabletopData[item].Page + "</a></li>" 
 }).join('');
-document.getElementById('insert').innerHTML = pageContent;
+document.getElementById('insert').innerHTML = pageName;
 
 $('#p0').click(function(){
 	console.log('plz go to page now, ok?');
