@@ -16,7 +16,7 @@ $(document).ready(function(){
   function showInfo(data, tabletop) {
   	
     tabletopData = data;
-    
+
       selectContent();
   }
 
@@ -44,8 +44,8 @@ function checkPage(index){
 		if( bodyId === pagePath) {
 			console.log('page path '+pagePath+' matches page id '+bodyId);
 			$('.title').html(tabletopData[index].Page);
-			$('#subtitle').html(tabletopData[index].Subtitle);
-			$('#content').html(tabletopData[index].Content);
+			document.getElementById('subtitle').innerHTML = tabletopData[index].Subtitle;
+			document.getElementById('content').innerHTML = tabletopData[index].Content;
 			console.log(tabletopData[index].Page);
 		} 
 	

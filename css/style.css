@@ -2,6 +2,7 @@
 /* Mobile first - default styles */
 
 body {
+	margin: 0px;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -23,6 +24,39 @@ a:hover {
 
 img {
 	  height: 500px;
+}
+
+img.logo {
+   position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+img.feature {
+	width: 101%;
+	height: auto;
+	position: absolute;
+	  top: 0px;
+	  z-index: -1;
+}
+
+h1,h2, div#content{
+	position: fixed;
+  top: 80%;
+  left: 3%;
+}
+
+h2, div#content {
+	display: none;
+}
+
+div#topNav {
+	position: absolute;
+	  top: 60px;
+	  left: 53%;
 }
 
 
