@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	// article-card hover-action
 
-	$("article").hover(function (){
+	$("#cards article").hover(function (){
 		console.log(this);
 		// article = this;
 		$(this).toggleClass("active");
