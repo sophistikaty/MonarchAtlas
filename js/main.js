@@ -1,5 +1,22 @@
 $(document).ready(function(){
 
+	// article-card hover-action
+
+	$("#cards article").hover(function (){
+		console.log(this);
+		// article = this;
+		$(this).toggleClass("active");
+		console.log('toggling active');
+	});
+
+	// var active = function (){
+	// 	this.toggleClass("active");
+	// 	console.log('toggling active');
+	// }
+
+
+	// Tabletop Spreadsheet Functions
+
 	window.onload = function() { init() };
 
   var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1W3L_kKds0ilf-BedTKCIWUH6dFWBED1rta4dcqbY-LY/pubhtml?gid=0&single=true';
