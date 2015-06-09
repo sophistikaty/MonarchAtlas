@@ -3,10 +3,10 @@ $(document).ready(function(){
 	// article-card hover-action
 
 	$("#cards article").hover(function (){
-		console.log(this);
+		// console.log(this);
 		// article = this;
 		$(this).toggleClass("active");
-		console.log('toggling active');
+		// console.log('toggling active');
 	});
 
 	// var active = function (){
