@@ -143,25 +143,9 @@
 	  }
 
 	}());
-
-	var myContent = document.getElementById('content');
-
-	var myModal = new Modal({
-	  content: myContent,
-	  className: 'zoom'
-	});
-
-	var triggers = document.getElementsByClassName('trigger');
 	
-		for (i=0; i<triggers.length; i++){
-			console.log('added click to ', triggers[i]);
-			
-			triggers[i].addEventListener('click', function() {
 
-			  myModal.open();
-			});
-
-		}
+	
 
 	// triggerButton.addEventListener('click', function() {
 	//   myModal.open();
