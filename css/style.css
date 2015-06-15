@@ -117,6 +117,7 @@ ul#insert {
   letter-spacing: 1px;
   overflow: hidden;
   height: 12px;
+  display: none;
 }
 
 #cards article h3 {
@@ -259,6 +260,11 @@ img.threes {
 
 #footer li a {
 
+}
+
+div.scotch-modal {
+	max-height: 90%;
+  overflow: auto;
 }
 /*ul#insert:hover {
 	width: 356px;

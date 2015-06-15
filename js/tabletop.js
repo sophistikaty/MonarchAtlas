@@ -1,7 +1,7 @@
 (function(global) {
   "use strict";
 
-  console.log('loaded tabletop');
+  // console.log('loaded tabletop');
 
   var inNodeJS = false;
   if (typeof module !== 'undefined' && module.exports) {
