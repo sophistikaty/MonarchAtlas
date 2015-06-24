@@ -1,8 +1,46 @@
 $(document).ready(function(){
 
+<<<<<<< HEAD
 
   $('.carousel').slick({
     autoplay: true
+=======
+	console.log('main js loaded, about to call slick on ', document.getElementById('carousel'));
+
+	var slider = document.getElementById('carousel');
+		previous = document.getElementsByClassName('icon-right-open-big');
+		next = document.getElementsByClassName('icon-left-open-big');
+
+	$('#carousel').slick({
+      slidesToShow: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2500,
+	  respondTo: slider,
+	  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
+	  nextArrow: "<div class='icon-right-open-big slick-next'></div>",
+	  fade: true,
+  		cssEase: 'linear'
+	 //  responsive: [
+  //   {
+  //     breakpoint: 1000,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1,
+  //       infinite: true,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 100,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  //   // You can unslick at a given breakpoint now by adding:
+  //   // settings: "unslick"
+  //   // instead of a settings object
+  // ]
+>>>>>>> 6cc5383ed0dd17fd178f951cb5d70252739868cf
   });
 
 	var Card = function(image, subtitle, leadText, content, id){
@@ -62,32 +100,32 @@ var pageName = tabletopData.map(function (item) {
 document.getElementById('insert').innerHTML = pageName;
 
 function checkPage(index){
-	console.log('index is ', index);
+	// console.log('index is ', index);
 	var pagePath = tabletopData[index].Path;
 	var bodyId = document.body.id;
-	console.log(bodyId);
+	// console.log(bodyId);
 	
 		if( bodyId === pagePath) {
-			console.log('page path '+pagePath+' matches page id '+bodyId);
+			// console.log('page path '+pagePath+' matches page id '+bodyId);
 			$('.title').html(tabletopData[index].Page);
 			// document.getElementById('subtitle').innerHTML = tabletopData[index].Subtitle;
 			document.getElementById('content').innerHTML = tabletopData[index].Content;
-			console.log('page data is ',tabletopData[index].Page);
+			// console.log('page data is ',tabletopData[index].Page);
 
 			if (tabletopData[index].cardIndex != "x"){
 
 				var tableTopIndex = parseInt(tabletopData[index].cardIndex);
-					console.log('index type ',typeof tableTopIndex);
+					// console.log('index type ',typeof tableTopIndex);
 
 					if( typeof tableTopIndex != NaN){
-						console.log('passing index is ',tableTopIndex);
+						// console.log('passing index is ',tableTopIndex);
 						pic = tabletopData[index].picture;
 						subtitle = tabletopData[index].Subtitle;
 						leadText = tabletopData[index].leadText;
 						content = tabletopData[index].Content;
 
 						card = new Card(pic, subtitle, leadText, content, tableTopIndex);
-						console.log('creating card ',card);
+						// console.log('creating card ',card);
 
 						cardSection = document.getElementById('cards');
 						article = document.createElement('article');
@@ -95,7 +133,7 @@ function checkPage(index){
 						article.classList.add('trigger');
 						article.innerHTML = card.shell;
 						cardSection.appendChild(article);
-						console.log('card section and shell ', cardSection, card.shell);
+						// console.log('card section and shell ', cardSection, card.shell);
 
 						var myContent = card.modalContent;
 
@@ -107,7 +145,7 @@ function checkPage(index){
 						var trigger = document.getElementById('card'+tableTopIndex);
 	
 						// for (i=0; i<triggers.length; i++){
-						 	console.log('added click to ', trigger);
+						 	// console.log('added click to ', trigger);
 							
 							trigger.addEventListener('click', function() {
 
