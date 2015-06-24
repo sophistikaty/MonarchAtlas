@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+
+  $('.carousel').slick({
+    autoplay: true
+  });
+
 	var Card = function(image, subtitle, leadText, content, id){
 						
 						this.image = '<img src="'+image+'" alt ="'+subtitle+', '+leadText +
