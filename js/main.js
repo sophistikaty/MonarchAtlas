@@ -3,11 +3,38 @@ $(document).ready(function(){
 	console.log('main js loaded, about to call slick on ', document.getElementById('carousel'));
 
 	var slider = document.getElementById('carousel');
+		previous = document.getElementsByClassName('icon-right-open-big');
+		next = document.getElementsByClassName('icon-left-open-big');
 
 	$('#carousel').slick({
       slidesToShow: 1,
 	  autoplay: true,
-	  respondTo: slider
+	  autoplaySpeed: 2500,
+	  respondTo: slider,
+	  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
+	  nextArrow: "<div class='icon-right-open-big slick-next'></div>",
+	  fade: true,
+  		cssEase: 'linear'
+	 //  responsive: [
+  //   {
+  //     breakpoint: 1000,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1,
+  //       infinite: true,
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 100,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+  //   // You can unslick at a given breakpoint now by adding:
+  //   // settings: "unslick"
+  //   // instead of a settings object
+  // ]
   });
 
 	var Card = function(image, subtitle, leadText, content, id){
