@@ -82,15 +82,15 @@ $(document).ready(function(){
 
 			if (sliderHeight > winHeight){
 				$("#main").css("margin-top", winHeight-tenDocHeight);
-				console.log('updating margin to ', winHeight);
+				// console.log('updating margin to ', winHeight);
 			}
 			else {
 				$("#main").css("margin-top", sliderHeight-tenDocHeight);
-				console.log('updating margin to ', sliderHeight);
+				// console.log('updating margin to ', sliderHeight);
 			}
 			
-			console.log('tenDocHeight is ', tenDocHeight);
-			console.log('twenDocHeight is ', twenDocHeight);
+			// console.log('tenDocHeight is ', tenDocHeight);
+			// console.log('twenDocHeight is ', twenDocHeight);
 			
 		// // console.log('this is ', this);
 		// $(window).resize(responsiveMargin);
@@ -98,23 +98,29 @@ $(document).ready(function(){
 	}responsiveMargin();
 	
 
-	var Card = function(image, subtitle, leadText, content, id){
+	var Card = function(image, gallery, subtitle, leadText, content, id){
+
+		// console.log('gallery is ', gallery);
 						
 						this.image = '<img src="'+image+'" alt ="'+subtitle+', '+leadText +
 						' by Kristin Dinnis, Monarch Atlas" >';
 						this.subtitle = '<h3>'+subtitle+'</h3>';
 						this.leadText = '<p>'+leadText+'</p>';
 						this.shell = this.image+this.subtitle+this.leadText; 
-						this.modalContent = '<h2>'+subtitle+'</h2><br><img src="'+image+'"alt ="'+subtitle+', '+leadText+
-						' by Kristin Dinnis, Monarch Atlas"><br><p>'+content+'</p>';
+						this.modalContent = '<h2>'+subtitle+'</h2><br><div id="gallery'+id
+						+'" class="gallery"></div><br><p>'+content+'</p>';
+						this.altText = subtitle+', '+leadText+
+ 						' by Kristin Dinnis, Monarch Atlas';
+ 						this.gallery = gallery;
+						
 					};
 
-	
+	function modalBuilt() {
 
-	// var active = function (){
-	// 	this.toggleClass("active");
-	// 	console.log('toggling active');
-	// }
+		console.log('called modalBuilt function');
+		
+	}
+	
 
 
 	// Tabletop Spreadsheet Functions
@@ -175,47 +181,45 @@ function checkPage(index){
 					if( typeof tableTopIndex != NaN){
 						// console.log('passing index is ',tableTopIndex);
 						pic = tabletopData[index].picture;
+						slideString = tabletopData[index].gallery;
 						subtitle = tabletopData[index].Subtitle;
 						leadText = tabletopData[index].leadText;
 						content = tabletopData[index].Content;
 
-						card = new Card(pic, subtitle, leadText, content, tableTopIndex);
-						// console.log('creating card ',card);
+						var slidesArray = slideString.split(",");
+								// console.log ('slideString and slidesArray are', slideString, slidesArray );
 
-						cardSection = document.getElementById('cards');
-						article = document.createElement('article');
-						article.id = 'card'+tableTopIndex;
-						article.classList.add('trigger');
-						article.innerHTML = card.shell;
-						cardSection.appendChild(article);
-						// console.log('card section and shell ', cardSection, card.shell);
+							card = new Card(pic, slidesArray, subtitle, leadText, content, tableTopIndex);
+							// console.log('creating card ',card);
+
+							cardSection = document.getElementById('cards');
+							article = document.createElement('article');
+							article.id = 'card'+tableTopIndex;
+							article.classList.add('trigger');
+							article.innerHTML = card.shell;
+							cardSection.appendChild(article);
 
 						var myContent = card.modalContent;
 
 						var myModal = new Modal({
 						  content: myContent,
-						  className: 'zoom'
+						  className: 'zoom',
+						  gallery: card.gallery,
+						  altText: card.altText
 						});
 
 						var trigger = document.getElementById('card'+tableTopIndex);
-	
-						// for (i=0; i<triggers.length; i++){
-						 	// console.log('added click to ', trigger);
 							
 							trigger.addEventListener('click', function() {
 
 							  myModal.open();
+
 							});
 
 						}
 
 					}
-					// $("#cards article").hover(function (){
-					// 		// console.log(this);
-					// 		// article = this;
-					// 		$(this).toggleClass("active");
-					// 		// console.log('toggling active');
-					// 	});
+				
 
 					}
 

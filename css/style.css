@@ -397,6 +397,19 @@ div.scotch-modal {
 
 	}
 
+	div.gallery {
+		min-width: 200px;
+  		max-width: 101%;
+	}
+
+	img.cardSlider {
+		position: relative;
+		top: 0px;
+  		height: 300px;
+  		padding: 0px 2px;
+  		margin: 0px;
+	}
+
 	img.threes {
 	  padding: 3%;
 	  width: 25%;

@@ -8,6 +8,7 @@
 	    this.closeButton = null;
 	    this.modal = null;
 	    this.overlay = null;
+	    // this.finished = modalBuilt();
 
 	    // Determine proper prefix
 	    this.transitionEnd = transitionSelect();
@@ -48,6 +49,7 @@
 	  }
 
 	  Modal.prototype.open = function() {
+	  		console.log('this on modal open is ', this);
 	    buildOut.call(this);
 	    initializeEvents.call(this);
 	    window.getComputedStyle(this.modal).height;
@@ -111,6 +113,44 @@
 	    // Append DocumentFragment to body
 	    document.body.appendChild(docFrag);
 
+	    var galleryDiv = document.getElementsByClassName('gallery');
+	    // console.log('targeting galleryDiv on modal) build', galleryDiv);
+	    // console.log('targeting gallery array and alt text', this.options.gallery, this.options.altText);
+
+	    var galleryArr = this.options.gallery;
+	    for (i=0; i< galleryArr.length; i++){
+	    	// var sliderHtml = '<img src="assets/'+galleryArr[i]+'" '+this.options.altText+'">';
+
+	    	sliderPic = document.createElement("img");
+	    	sliderPic.className = "cardSlider";
+	    	sliderPic.src = 'assets/'+galleryArr[i];
+	    	sliderPic.alt = this.options.altText;
+
+	    		console.log('appending sliderPic to galleryDiv ', sliderPic, galleryDiv[0]);
+	    	galleryDiv[0].appendChild(sliderPic);
+	    	
+	    	
+	    }
+
+	    var cardSlider = galleryDiv[0]
+	    			console.log('cardSlider is ', cardSlider);
+
+				$('.gallery').slick({
+					infinite: true,
+					// dots:true,
+					centerMode: true,
+  					variableWidth: true,
+				  slidesToShow: 2,
+				  slidesToScroll: 2,
+				  autoplay: true,
+				  autoplaySpeed: 4000,
+				  respondTo: cardSlider.firstChild,
+				  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
+				  nextArrow: "<div class='icon-right-open-big slick-next'></div>"
+			    
+			});
+
+
 	  }
 
 	  function extendDefaults(source, properties) {
@@ -144,9 +184,3 @@
 
 	}());
 	
-
-	
-
-	// triggerButton.addEventListener('click', function() {
-	//   myModal.open();
-	// });
