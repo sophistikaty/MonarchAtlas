@@ -95,7 +95,7 @@ h1, div#content{
 }
 
 h1#siteTitle {
-	margin: 5px 0px 0px 0px; 
+	margin: 5px 0px 0px 0px;
 }
 
 
@@ -135,6 +135,7 @@ ul#insert {
 	  top: 10px;
 	  left: -50px;*/
 	  font-size: 20px;
+	  font-weight: normal;
 }
 
 #cards article.active h3 {
@@ -145,11 +146,11 @@ ul#insert {
 	font-size: 12px;
   font-weight: lighter;
   transition: color 2s ease;
-  margin: 8px 0px 0px;
+  margin: 10px 0px;
 }
 
 #cards article.active p {
-	color: #9ECBD0;
+	color: #464646;
 }
 
  #cards article {
@@ -209,13 +210,15 @@ article.content {
 
 #meet p {
 	font-size: 15px;
-  color:#BECBDC;
+  color:#464646;
 }
 
-#meet img.feature {
-	/*position: relative;
-  top: -781px;*/
-	/*z-index: 0;*/
+#meet img.headshot {
+  float: right;
+  height: 200px;
+  margin: 0px 80px 0px 5px;
+  position: relative;
+  top: -40px;
 
 }
 

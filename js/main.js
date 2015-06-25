@@ -1,6 +1,40 @@
 $(document).ready(function(){
+	
+	var sectionIndex;
+	    logo = document.getElementById('mainLogo');
+		sectionIds = [main, meet, topNav];
 
-console.log('main js loaded, about to call slick on ', document.getElementById('carousel'));
+		if (sectionIndex == undefined) {
+
+			sectionIndex = 0;
+
+			scrollSections(sectionIds, sectionIndex);
+		}
+
+
+	function scrollSections(){
+
+		// console.log('sectionIds and sectionIndex are ', sectionIds, sectionIndex);
+		logo.onclick = function(){
+			// console.log('logo clicked, sectionIndex is ', sectionIndex);
+			var nextSectionId = sectionIds[sectionIndex].id;
+				nextSection = sectionIds[sectionIndex];
+			// nextSection.scrollIntoView({block: "end", behavior: "smooth"});
+
+			document.getElementById(nextSectionId).scrollIntoView({behavior: "smooth"});
+			
+			// window.location.hash = "#"+sectionIds[sectionIndex].id;
+			console.log('sectionIndex about to increment, going to location ', sectionIds[sectionIndex].id);
+			if (sectionIndex < 2){
+				sectionIndex++
+			} else {
+				sectionIndex = 0;
+			}
+			return sectionIndex;
+		}
+	}
+
+	
 
 	var slider = document.getElementById('carousel');
 		previous = document.getElementsByClassName('icon-right-open-big');
