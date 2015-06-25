@@ -73,24 +73,17 @@
 /* Close Button */
 .scotch-close
 {
-    /*font-family: Helvetica,Arial,sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 12px;*/
-
-    position: absolute;
-    top: 5px;
-    right: 5px;
-
-    padding: 5px 7px 7px;
-
-    cursor: pointer;
-
-    color: #fff;
-    border: 0;
-    outline: none;
-    background: lightgray;
-    border-radius: 50%;
+  position: absolute;
+      top: 8px;
+      right: 8px;
+  padding: 1px 6px 3px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  outline: none;
+  background: lightgray;
+    border-radius: 100% 10% 100% 100%;
+  font-size: 20px;
 }
 
 .scotch-close:hover

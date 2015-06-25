@@ -20,7 +20,7 @@
 	      closeButton: true,
 	      content: "",
 	      maxWidth: 80,
-	      minWidth: 280,
+	      minWidth: 175,
 	      overlay: true
 	    }
 
@@ -139,7 +139,7 @@
 					infinite: true,
 					centerMode: true,
   					variableWidth: true,
-				  slidesToShow: 1,
+				  // slidesToShow: 1,
 				  slidesToScroll: 1,
 				  autoplay: true,
 				  autoplaySpeed: 4000,
