@@ -1,11 +1,6 @@
 $(document).ready(function(){
 
-<<<<<<< HEAD
-
-  $('.carousel').slick({
-    autoplay: true
-=======
-	console.log('main js loaded, about to call slick on ', document.getElementById('carousel'));
+console.log('main js loaded, about to call slick on ', document.getElementById('carousel'));
 
 	var slider = document.getElementById('carousel');
 		previous = document.getElementsByClassName('icon-right-open-big');
@@ -14,7 +9,7 @@ $(document).ready(function(){
 	$('#carousel').slick({
       slidesToShow: 1,
 	  autoplay: true,
-	  autoplaySpeed: 2500,
+	  autoplaySpeed: 4000,
 	  respondTo: slider,
 	  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
 	  nextArrow: "<div class='icon-right-open-big slick-next'></div>",
@@ -40,8 +35,23 @@ $(document).ready(function(){
   //   // settings: "unslick"
   //   // instead of a settings object
   // ]
->>>>>>> 6cc5383ed0dd17fd178f951cb5d70252739868cf
   });
+	
+
+	function responsiveMargin() {
+
+		var sliderHeight = $("#carousel").height();
+			docHeight = $(document).height();
+			tenDocHeight = (docHeight/15);
+			console.log('tenDocHeight is ', tenDocHeight);
+			
+		$("#main").css("margin-top", sliderHeight-tenDocHeight);
+		console.log('updating margin to ', sliderHeight);
+		// // console.log('this is ', this);
+		// $(window).resize(responsiveMargin);
+
+	}responsiveMargin();
+	
 
 	var Card = function(image, subtitle, leadText, content, id){
 						
