@@ -107,8 +107,8 @@ $(document).ready(function(){
 						this.subtitle = '<h3>'+subtitle+'</h3>';
 						this.leadText = '<p>'+leadText+'</p>';
 						this.shell = this.image+this.subtitle+this.leadText; 
-						this.modalContent = '<h2>'+subtitle+'</h2><br><div id="gallery'+id
-						+'" class="gallery"></div><br><p>'+content+'</p>';
+						this.modalContent = '<h2>'+subtitle+'</h2><div id="gallery'+id
+						+'" class="gallery"></div><p>'+content+'</p>';
 						this.altText = subtitle+', '+leadText+
  						' by Kristin Dinnis, Monarch Atlas';
  						this.gallery = gallery;
