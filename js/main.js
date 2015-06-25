@@ -41,12 +41,23 @@ console.log('main js loaded, about to call slick on ', document.getElementById('
 	function responsiveMargin() {
 
 		var sliderHeight = $("#carousel").height();
+			winHeight = $(window).height();
 			docHeight = $(document).height();
-			tenDocHeight = (docHeight/15);
-			console.log('tenDocHeight is ', tenDocHeight);
+			twenDocHeight = (docHeight/20);
+			tenDocHeight = (docHeight/10);
+
+			if (sliderHeight > winHeight){
+				$("#main").css("margin-top", winHeight-tenDocHeight);
+				console.log('updating margin to ', winHeight);
+			}
+			else {
+				$("#main").css("margin-top", sliderHeight-tenDocHeight);
+				console.log('updating margin to ', sliderHeight);
+			}
 			
-		$("#main").css("margin-top", sliderHeight-tenDocHeight);
-		console.log('updating margin to ', sliderHeight);
+			console.log('tenDocHeight is ', tenDocHeight);
+			console.log('twenDocHeight is ', twenDocHeight);
+			
 		// // console.log('this is ', this);
 		// $(window).resize(responsiveMargin);
 
