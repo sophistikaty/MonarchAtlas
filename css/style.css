@@ -59,6 +59,7 @@ img.logo:hover {
 
 img.feature {
 	width: 111%;
+	margin: -5px;
 	/*min-width: 650px;
 	height: auto;
 
