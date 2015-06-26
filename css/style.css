@@ -47,7 +47,7 @@ img.logo {
   	transition: height 0.5s ease;
   /*border-radius: 50%;*/
   border-radius: 50% 15%;
-   z-index: 9;
+   z-index: 21;
 
 
 }
@@ -211,7 +211,7 @@ article.content {
 #meet img.headshot {
   float: right;
   height: 200px;
-  margin: 0px 80px 0px 5px;
+    margin: 0px 150px 0px 5px;
   position: relative;
   top: -10px;
 
@@ -447,7 +447,7 @@ div.scotch-modal {
 	#meet p {
 	  font-size: 40px;
 	  clear: both;
-	  padding: 0px 351px 0px 0px;
+	  padding: 0px 435px 0px 0px;
 	}
 
 	img.threes {
@@ -506,7 +506,7 @@ div.scotch-modal {
 }
 
 /*Small devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 
 	[class^="icon-"]:before,
 	[class*=" icon-"]:before {
@@ -528,7 +528,7 @@ div.scotch-modal {
 	}
 
 	#cards article {
-		width: 27%;
+		width: 50%;
 	}
 
 	#cards article img {
@@ -585,7 +585,7 @@ div.scotch-modal {
 	#footer li {
 		font-size: 20px;
 	}
-}
+}*/
 	
 /*Medium devices (desktops, 992px and up)*/
 @media (min-width: 992px) {	

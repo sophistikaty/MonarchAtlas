@@ -77,7 +77,7 @@ $(document).ready(function(){
 		var sliderHeight = $("#carousel").height();
 			winHeight = $(window).height();
 			docHeight = $(document).height();
-			twenDocHeight = (docHeight/20);
+			// twenDocHeight = (docHeight/20);
 			tenDocHeight = (docHeight/10);
 
 			if (sliderHeight > winHeight){
