@@ -19,8 +19,6 @@
 	      className: 'fade-and-drop',
 	      closeButton: true,
 	      content: "",
-	      maxWidth: 80,
-	      minWidth: 175,
 	      overlay: true
 	    }
 
