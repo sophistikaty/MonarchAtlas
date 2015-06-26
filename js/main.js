@@ -41,15 +41,14 @@ $(document).ready(function(){
 		next = document.getElementsByClassName('icon-left-open-big');
 
 	$('#carousel').slick({
-		adaptiveHeight: true,
+
       slidesToShow: 1,
 	  autoplay: true,
 	  autoplaySpeed: 4000,
 	  respondTo: slider,
 	  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
 	  nextArrow: "<div class='icon-right-open-big slick-next'></div>",
-	  fade: true,
-  		cssEase: 'linear'
+	  fade: true
 	 //  responsive: [
   //   {
   //     breakpoint: 1000,
