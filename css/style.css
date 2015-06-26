@@ -145,7 +145,7 @@ ul#insert {
 }
 
 #cards article p {
-	font-size: 12px;
+	font-size: 15px;
   font-weight: lighter;
   transition: color 2s ease;
   margin: 10px 0px;
@@ -267,11 +267,11 @@ div.scotch-modal {
 #modal-content p {
 		margin: 0px;
   		padding: 0px;
-  		font-size: 12px;
+  		font-size: 15px;
 	}
 
 	#modal-content h2 {
-		font-size: 15px;
+		font-size: 20px;
   		  margin: 15px 0px 5px 0px;
   		padding: 0px;
 	}
@@ -284,7 +284,7 @@ div.scotch-modal {
 	img.cardSlider {
 		position: relative;
 		top: 0px;
-  		height: 175px;
+  		height: 400px;
   		padding: 10px;
   		margin: 0px;
 	}
@@ -373,8 +373,8 @@ div.scotch-modal {
 	}
 
 	div#main{
-		padding: 580px 0px 0px 0px;
-  		width: 127%;
+		padding: 660px 0px 0px 0px;
+  		width: 139%;
 	}
 
 	h1#siteTitle {
@@ -388,16 +388,22 @@ div.scotch-modal {
 		width: 75%;
 	}
 
+	#cards article img {
+		opacity: 1;
+	}
+
 	#cards article.active {
 		width: 80%;
 	}
 
 	#cards article h3 {
 		font-size: 80px;
+		color: #ffffff;
 	}
 
 	#cards article p {
 		font-size: 50px;
+		color: lightgray;
 	}
 
 	#modal-content {
@@ -440,6 +446,7 @@ div.scotch-modal {
 	#meet p {
 	  font-size: 40px;
 	  clear: both;
+	  padding: 0px 351px 0px 0px;
 	}
 
 	img.threes {
@@ -459,12 +466,129 @@ div.scotch-modal {
 	}
 }
 
+/* Small Mobile devices - iphone, etc. */
+@media (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	img.logo {
+		  bottom: 20px;
+		  height: 215px;
+	}
+
+	img.logo:hover {
+		height: 245px;
+	}
+
+	div#main {
+		padding: 735px 0px 0px 0px;
+	}
+
+	#meet {
+		width: 132%;
+  		padding: 0px 64px;
+	}
+
+	#meet img.headshot {
+
+		width: 45%;
+		right: 0px;
+	}
+
+	#meet p {
+		clear: none;
+	}
+
+	#footer {
+		width: 177%;
+	}
+
+
+
+}
+
 /*Small devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) {
-}*/
+@media (min-width: 768px) {
+
+	[class^="icon-"]:before,
+	[class*=" icon-"]:before {
+		font-size: 25px;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	div#main {
+		  padding: 25px 0px 0px 0px;
+		  width: 102%;
+	}
+
+	h1#siteTitle {
+		  margin: 20px 0px 0px 20px;
+  		font-size: 50px;
+	}
+
+	#cards article {
+		width: 27%;
+	}
+
+	#cards article img {
+		opacity: 1;
+	}
+
+	#cards article.active {
+		width: 35%;
+	}
+
+	#cards article h3 {
+		font-size: 25px;
+		color: #ffffff;
+	}
+
+	#cards article p {
+		font-size: 20px;
+		color: lightgray;
+	}
+
+	div.scotch-modal {
+		max-width: 71%;
+		top: 50%;
+  	left: 42%;
+	}
+
+	img.cardSlider {
+		height: 435px;
+	}
+
+	#modal-content h2 {
+		font-size: 30px;
+	}
+
+	#modal-content p {
+		font-size: 18px;
+	}
+
+	#meet h2 {
+		font-size: 25px;
+	}
+
+	#meet img.headshot {
+	  margin: 0px 120px 0px 5px;
+	    height: 300px;
+	    top: -50px;
+
+	}
+
+	#meet p {
+		font-size: 16px;
+	}
+
+	#footer li {
+		font-size: 20px;
+	}
+}
 	
 /*Medium devices (desktops, 992px and up)*/
 @media (min-width: 992px) {	
+	
 
 	ul#insert {
 	  font-size: 18px;
@@ -475,6 +599,10 @@ div.scotch-modal {
 		  bottom: 120px;
 		  right: 25px;
 		  height: 100px;
+	}
+
+	img.logo:hover {
+		height: 120px;
 	}
 
 	div#carousel {
@@ -491,16 +619,21 @@ div.scotch-modal {
 	}
 
 	div#main {
-	  margin: 675px 0px 0px 0px;
+	  margin: 0px;
+	  padding: 0px;
 	}
 
 	#cards article {
-		width: 15%;
+		width: 25%;
 		padding: 40px 40px 0px;
 	}
 
+	#cards article p {
+		color: #000000;
+	}
+
 	#cards article.active {
-		width: 18%;
+		width: 27%;
 
 	}
 
