@@ -70,7 +70,7 @@ div#carousel {
 	width:101%;
 	position: fixed;
 	  top: 0px;
-	  right: 0px;
+	  left: 0px;
   z-index: -10;
   
 }
@@ -588,6 +588,11 @@ div.scotch-modal {
 	
 /*Medium devices (desktops, 992px and up)*/
 @media (min-width: 992px) {	
+
+	[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-size: 25px;
+}
 	
 
 	ul#insert {
@@ -607,15 +612,14 @@ div.scotch-modal {
 
 	div#carousel {
 		width: 100%;
-		  top: 0px;
-		  left: auto;
 	}
 
-	h1 {
+	h1#siteTitle {
 		 /* position: ;*/
 		  top: auto;
 	  /*bottom: 120px;*/
 	  font-size: 35px;
+	  margin: 20px 0px 0px 20px;
 	}
 
 	div#main {
@@ -633,7 +637,7 @@ div.scotch-modal {
 	}
 
 	#cards article.active {
-		width: 27%;
+		width: 26%;
 
 	}
 
