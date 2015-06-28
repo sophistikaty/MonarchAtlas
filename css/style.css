@@ -2,10 +2,11 @@
 /* Mobile first - default styles */
 
 body {
-	margin: 0px;
+	margin: 0 auto;
+	width: auto;
 	background-image: url("../assets/Kristen-0024.jpg");
 	background-size: contain;
-  background-repeat: no-repeat;
+  	background-repeat: no-repeat;
 	overflow-x: hidden;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
