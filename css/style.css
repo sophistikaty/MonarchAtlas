@@ -58,7 +58,7 @@ img.logo:hover {
 }
 
 img.feature {
-	margin: 0px;
+	/*margin: 0px;*/
 	/*min-width: 650px;
 	height: auto;
 
@@ -68,7 +68,7 @@ img.feature {
 
 div#carousel {
 	width:101%;
-	position: fixed;
+	position: absolute;
 	  top: 0px;
 	  left: 0px;
   z-index: -10;
