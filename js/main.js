@@ -41,7 +41,6 @@ $(document).ready(function(){
 		next = document.getElementsByClassName('icon-left-open-big');
 
 	$('#carousel').slick({
-		
       // slidesToShow: 1,
 	  autoplay: true,
 	  infinite: true,
@@ -51,6 +50,7 @@ $(document).ready(function(){
 	  respondTo: slider,
 	  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
 	  nextArrow: "<div class='icon-right-open-big slick-next'></div>"
+	  
 	  
 	 //  responsive: [
   //   {
