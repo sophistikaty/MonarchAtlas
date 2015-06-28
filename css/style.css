@@ -64,14 +64,13 @@ img.feature {
 	/*margin: 0px;*/
 	/*min-width: 650px;
 	height: auto;
-
 	margin: -3px;
 	padding: 0px;*/
 }
 
 div#carousel {
 	width:101%;
-	position: absolute;
+	position: fixed;
 	  top: 0px;
 	  left: 0px;
   z-index: -10;
@@ -237,7 +236,7 @@ img.threes {
 	z-index: 20;
 	position: relative;
 	clear: both;
-	margin: -3px;
+	margin: 0 auto;
 
 }
 
