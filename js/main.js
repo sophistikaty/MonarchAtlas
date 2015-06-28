@@ -41,7 +41,7 @@ $(document).ready(function(){
 		next = document.getElementsByClassName('icon-left-open-big');
 
 	$('#carousel').slick({
-      
+      adaptiveHeight: true,
 	  autoplay: true,
 	  autoplaySpeed: 4000,
 	  pauseOnHover: false,
