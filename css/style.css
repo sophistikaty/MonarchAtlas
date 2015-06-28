@@ -3,7 +3,9 @@
 
 body {
 	margin: 0px;
-	/*background: #BECBDC;*/
+	background-image: url("../assets/Kristen-0024.jpg");
+	background-size: contain;
+  background-repeat: no-repeat;
 	overflow-x: hidden;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
