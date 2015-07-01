@@ -2,9 +2,12 @@
 /* Mobile first - default styles */
 
 body {
-	width: 100%;
-	margin: 0px auto;
-	/*background: #BECBDC;*/
+
+	margin: 0 auto;
+	width: auto;
+	background-image: url("../assets/Kristen-0024.jpg");
+	background-size: contain;
+  	background-repeat: no-repeat;
 	overflow-x: hidden;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
@@ -59,10 +62,9 @@ img.logo:hover {
 }
 
 img.feature {
-	margin: 0px;
+	/*margin: 0px;*/
 	/*min-width: 650px;
 	height: auto;
-
 	margin: -3px;
 	padding: 0px;*/
 }
@@ -71,7 +73,7 @@ div#carousel {
 	width:101%;
 	position: fixed;
 	  top: 0px;
-	  right: 0px;
+	  left: 0px;
   z-index: -10;
   
 }
@@ -241,7 +243,7 @@ img.threes {
 	z-index: 20;
 	position: relative;
 	clear: both;
-	margin: -3px;
+	margin: 0 auto;
 
 }
 
@@ -595,6 +597,11 @@ div.scotch-modal {
 	
 /*Medium devices (desktops, 992px and up)*/
 @media (min-width: 992px) {	
+
+	[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-size: 25px;
+}
 	
 
 	ul#insert {
@@ -613,15 +620,14 @@ div.scotch-modal {
 
 	div#carousel {
 		width: 100%;
-		  top: 0px;
-		  left: auto;
 	}
 
-	h1 {
+	h1#siteTitle {
 		 /* position: ;*/
 		  top: auto;
 	  /*bottom: 120px;*/
 	  font-size: 35px;
+	  margin: 20px 0px 0px 20px;
 	}
 
 	div#main {
@@ -639,8 +645,8 @@ div.scotch-modal {
 	}
 
 	#cards article.active {
-		/*width: 27%;*/
 
+		width: 26%;
 	}
 
 	img.threes {

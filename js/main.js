@@ -41,28 +41,37 @@ $(document).ready(function(){
 		next = document.getElementsByClassName('icon-left-open-big');
 
 	$('#carousel').slick({
-		
       slidesToShow: 1,
 	  autoplay: true,
 	  autoplaySpeed: 4000,
+	  pauseOnHover: false,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: "linear",
 	  respondTo: slider,
 	  prevArrow: "<div class='icon-left-open-big slick-prev'></div>",
 	  nextArrow: "<div class='icon-right-open-big slick-next'></div>",
-	  fade: true
+	  centerMode: true
+	  
+	  
 	 //  responsive: [
   //   {
   //     breakpoint: 1000,
   //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1,
-  //       infinite: true,
+  //       infinite: true
   //     }
   //   },
   //   {
-  //     breakpoint: 100,
+  //     breakpoint: 1000,
   //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1
+  //       infinite: true
+  //     }
+  //   }
+  //   {
+  //     breakpoint: 1000,
+  //     settings: {
+  //       infinite: true
   //     }
   //   }
   //   // You can unslick at a given breakpoint now by adding:
