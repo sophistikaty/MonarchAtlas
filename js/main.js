@@ -41,7 +41,7 @@ $(document).ready(function(){
 		next = document.getElementsByClassName('icon-left-open-big');
 
 	$('#carousel').slick({
-
+		
       slidesToShow: 1,
 	  autoplay: true,
 	  autoplaySpeed: 4000,
@@ -106,7 +106,7 @@ $(document).ready(function(){
 						' by Kristin Dinnis, Monarch Atlas" >';
 						this.subtitle = '<h3>'+subtitle+'</h3>';
 						this.leadText = '<p>'+leadText+'</p>';
-						this.shell = this.image+this.subtitle+this.leadText; 
+						this.shell = this.subtitle+this.leadText+this.image; 
 						this.modalContent = '<h2>'+subtitle+'</h2><div id="gallery'+id
 						+'" class="gallery"></div><p>'+content+'</p>';
 						this.altText = subtitle+', '+leadText+
