@@ -111,6 +111,11 @@ h2#subtitle, div#content {
 	display: none;
 }
 
+.hide {
+	display: none;
+}
+
+
 div#topNav {
 	position: absolute;
   top: 0px;
@@ -205,6 +210,10 @@ ul#insert {
 article.content {
    padding: 30px;
    width: 100%;
+}
+
+#meet article.content {
+   width: auto;
 }
 
 #meet h2 {
