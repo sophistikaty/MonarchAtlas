@@ -644,8 +644,12 @@ div.scotch-modal {
 	  padding: 0px;
 	}
 
+	section#cards {
+		padding: 0px 0px 0px 20px;
+	}
+
 	#cards article {
-		width: 25%;
+		width: 28%;
 		padding: 0px 20px 0px;
 	}
 
@@ -655,7 +659,7 @@ div.scotch-modal {
 
 	#cards article.active {
 
-		width: 26%;
+		width: 29%;
 	}
 
 	img.threes {
