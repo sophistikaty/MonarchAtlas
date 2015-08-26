@@ -87,7 +87,7 @@ $(document).ready(function(){
 			winHeight = $(window).height();
 			docHeight = $(document).height();
 			// twenDocHeight = (docHeight/20);
-			tenDocHeight = (docHeight/10);
+			tenDocHeight = (docHeight/25);
 
 			if (sliderHeight > winHeight){
 				$("#main").css("margin-top", winHeight-tenDocHeight);
