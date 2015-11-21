@@ -108,6 +108,13 @@ $(document).ready(function(){
 		// $(window).resize(responsiveMargin);
 
 	}responsiveMargin();
+
+	window.onresize = function(){
+		console.log('changed');
+		responsiveMargin();
+	}
+
+	
 	
 
 	var Card = function(image, gallery, subtitle, leadText, content, id){
