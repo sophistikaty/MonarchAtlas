@@ -81,7 +81,7 @@ div#carousel {
 div#main {
 	background: #ffffff;
 	z-index: 10;
-	padding: 140px 0px 0px 0px;
+	padding: 50px 0px 0px 0px;
 	  /*margin: 480px 0px 0px 0px;*/
   /*background-color: #eeeee0;*/
 }
@@ -100,7 +100,7 @@ div#content{
 }
 
 h1#siteTitle {
-	padding: 15px 15px 0px 15px;
+	padding: 0px 15px 15px 15px;
   margin: 0px;
 	font-size: 30px;
 }
@@ -392,7 +392,7 @@ div.scotch-modal {
 
 	div#main{
 		padding: 660px 0px 0px 0px;
-  		width: 139%;
+  		width: 155%;
 	}
 
 	h1#siteTitle {
@@ -496,12 +496,18 @@ div.scotch-modal {
 	}
 
 	div#main {
-		padding: 735px 0px 0px 0px;
+		padding: 400px 0px 0px 0px;
+		width: 273%;
 	}
 
-	#meet {
+	/*#cards {
 		width: 132%;
-  		padding: 0px 64px;
+    	padding: 0px 64px;
+	}
+*/
+	#meet {
+		/*width: 273%;*/
+  		/*padding: 0px 64px;*/
 	}
 
 	#meet img.headshot {
@@ -515,8 +521,11 @@ div.scotch-modal {
 	}
 
 	#footer {
-		width: 177%;
+		width: 273%;
+    	/*padding: 0px 64px;*/
 	}
+
+
 
 
 
