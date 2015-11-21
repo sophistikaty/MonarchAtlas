@@ -97,6 +97,9 @@ $(document).ready(function(){
 				$("#main").css("margin-top", sliderHeight-tenDocHeight);
 				// console.log('updating margin to ', sliderHeight);
 			}
+
+			// $('div#main').css("width",window.innerWidth);
+			// $('div#footer').css("width",window.innerWidth);
 			
 			// console.log('tenDocHeight is ', tenDocHeight);
 			// console.log('twenDocHeight is ', twenDocHeight);
